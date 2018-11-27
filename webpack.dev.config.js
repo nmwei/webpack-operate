@@ -22,5 +22,18 @@ module.exports = {
         //访问hocalhost:9000/api:*时，会被代理到hocalhost:8880/api:*
       }
     }
+  },
+  module: {
+    rules: [{
+      test: /\.js$/, 
+      exclude: /(node_modules|bower_components)/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['env'],
+          plugins: []
+        }
+      }
+    }]
   }
 }
