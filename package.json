@@ -4,7 +4,7 @@
   "description": "webpack学习代码演示",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --config ./webpack.dev.config.js --mode development"
+    "dev": "webpack-dev-server --config ./webpack.dev.config.js --mode development"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,9 @@
   },
   "homepage": "https://github.com/nmwei/webpack-operate#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.26.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   }
 }
