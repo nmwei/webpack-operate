@@ -7,6 +7,7 @@ module.exports = {
     path: __dirname,
     filename: './release/bundle.js' 
   },
+  devtool: 'eval-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html'
