@@ -15,6 +15,12 @@ module.exports = {
   ],
   devServer: {
     open: true, //浏览器自动打开
-    port: 9000
+    port: 9000,
+    proxy: {
+      '/api/*': {
+        target: 'http://localhost:8880'
+        //访问hocalhost:9000/api:*时，会被代理到hocalhost:8880/api:*
+      }
+    }
   }
 }
